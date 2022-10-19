@@ -16,6 +16,9 @@
           can get Cat
         </span>
         <span v-else> You got Cat for today </span>
+        <div>
+          i made this for <b>Sheila Putri Cullina</b> <span class="tw-text-red-500">❤</span>
+        </div>
       </div>
       <br />
       <br v-if="!isGet" />
