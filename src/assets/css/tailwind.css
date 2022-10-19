@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply tw-text-4xl;
+  }
+  h2 {
+    @apply tw-text-3xl;
+  }
+  h3 {
+    @apply tw-text-2xl;
+  }
+  h4 {
+    @apply tw-text-xl;
+  }
+  h5 {
+    @apply tw-text-lg;
+  }
+  blockquote {
+    @apply tw-pl-4 tw-border-l-2 tw-border-gray-300;
+  }
+  p {
+    @apply tw-mb-3 !important;
+  }
+  a {
+    @apply tw-text-blue-500 tw-underline;
+  }
+
+  .text-btn-super-small {
+    @apply tw-text-xs tw-tracking-wider tw-font-medium;
+  }
+  .text-btn-small {
+    @apply tw-text-sm tw-tracking-wider tw-font-medium;
+  }
+  .text-btn-md {
+    @apply tw-text-base tw-tracking-wider tw-font-medium;
+  }
+  .text-btn-lg {
+    @apply tw-text-lg tw-tracking-wider tw-font-medium;
+  }
+  .sticky-comp {
+    @apply tw-top-0 tw-sticky tw-z-10;
+  }
+  .fcb {
+    @apply tw-flex tw-items-center tw-justify-between;
+  }
+  .fca {
+    @apply tw-flex tw-items-center tw-justify-around;
+  }
+  .fce {
+    @apply tw-flex tw-items-center tw-justify-evenly;
+  }
+  .fcc {
+    @apply tw-flex tw-items-center tw-justify-center;
+  }
+  .fcc-desktop {
+    @apply md:tw-flex md:tw-items-center md:tw-justify-center;
+  }
+  .fc {
+    @apply tw-flex tw-items-center;
+  }
+  .fc-desktop {
+    @apply md:tw-flex md:tw-items-center;
+  }
+  .grid-12 {
+    @apply tw-grid tw-grid-cols-12;
+  }
+  .grid-2 {
+    @apply tw-grid tw-grid-cols-2;
+  }
+  .grid-1 {
+    @apply tw-grid tw-grid-cols-1;
+  }
+  .label-sm {
+    @apply tw-text-sm tw-font-normal tw-mb-1.5;
+  }
+  .label-md {
+    @apply tw-text-base tw-font-normal tw-mb-1.5;
+  }
+  .label-lg {
+    @apply tw-text-lg tw-font-normal tw-mb-1.5;
+  }
+  .input-custom {
+    @apply tw-border tw-border-solid tw-h-12 tw-border-gray-300 tw-text-gray-800 tw-text-base tw-rounded focus:tw-ring-blue-500 focus:tw-border-blue-500 tw-block tw-w-full tw-p-2.5;
+  }
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Rubik"), url("/fonts/Rubik/static/Rubik-Light.ttf") format("truetype")
+}
+@font-face {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Rubik"), url("/fonts/Rubik/static/Rubik-Regular.ttf") format("truetype")
+}
+@font-face {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Rubik"), url("/fonts/Rubik/static/Rubik-Medium.ttf") format("truetype")
+}
+@font-face {
+  font-family: "Rubik";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Rubik"), url("/fonts/Rubik/static/Rubik-SemiBold.ttf") format("truetype")
+}
+@font-face {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Rubik"), url("/fonts/Rubik/static/Rubik-Bold.ttf") format("truetype")
+}
+@font-face {
+  font-family: "Rubik";
+  font-weight: 800;
+  font-style: normal;
+  src: local("Rubik"), url("/fonts/Rubik/static/Rubik-ExtraBold.ttf") format("truetype")
+}

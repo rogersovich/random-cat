@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <metainfo>
+    <template v-slot:title="{ content }">{{
+      content ? `${content} - Cat` : `Cat`
+    }}</template>
+  </metainfo>
+  <header />
+
+  <router-view />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { useMeta } from "vue-meta";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  setup() {
+    useMeta({
+      title: "",
+      htmlAttrs: { lang: "en", amp: true },
+    });
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #1e293b;
 }
 </style>
