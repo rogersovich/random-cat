@@ -25,17 +25,18 @@
       <div class="fcc" v-if="isGet">
         <n-image
           v-if="image !== '' && !isLoading"
-          width="250"
-          style="max-height: 250px"
+          width="350"
+          style="max-height: 350px"
           :src="image"
           object-fit="cover"
           lazy
+          alt="A random cat"
         >
           <template #placeholder>
             <div
               style="
-                width: 200px;
-                height: 200px;
+                width: 350px;
+                height: 350px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -75,8 +76,8 @@ const getRandomImage = async () => {
   image.value = "";
   await fetchRandomCat().then((res) => {
     isLoading.value = false;
-    const { data } = res;
-    image.value = data.file;
+    const data = res.request.responseURL
+    image.value = data;
   });
 };
 </script>
